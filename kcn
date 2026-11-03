@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kem chống nắng d'Alba White Truffle Waterfull Tone-Up SPF 50+</title>
+  <link rel="icon" href="https://content.pancake.vn/web-media-264/s50x50/fwebp/8f/3e/6a/34/f90576408d1aa0cf77192b120b00892a43d43622edaf79e55704c46f-w:875-h:875-l:56294-t:image/jpeg.jpg" type="image/jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      padding-bottom: 70px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      min-height: 100vh;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 12px;
+      color: #222;
+    }
+    .price-box {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .current-price {
+      font-size: 24px;
+      font-weight: 700;
+      color: #ee4d2d;
+    }
+    .old-price {
+      font-size: 14px;
+      color: #888;
+      text-decoration: line-through;
+    }
+    .discount-badge {
+      background: #ee4d2d;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 2px;
+    }
+    .sales-count {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    
+    /* Progress Bar */
+    .stock-box {
+      background: #fff5f5;
+      border: 1px solid #ffe1e1;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 15px;
+    }
+    .stock-text {
+      font-size: 13px;
+      color: #ee4d2d;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    .progress-bar-bg {
+      background: #ffd0d0;
+      height: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+    .progress-bar-fill {
+      background: #ee4d2d;
+      height: 100%;
+      width: 86%;
+    }
+    .stock-subtext {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #666;
+    }
+
+    /* Policy Grid */
+    .policies {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      background: #fafafa;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .policy-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .policy-icon {
+      font-size: 16px;
+    }
+    .policy-text-main {
+      font-size: 12px;
+      font-weight: bold;
+      color: #333;
+    }
+    .policy-text-sub {
+      font-size: 11px;
+      color: #777;
+    }
+
+    /* Section Details */
+    .section-detail {
+      border-top: 8px solid #f5f5f5;
+      padding: 15px;
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      color: #333;
+      border-bottom: 2px solid #ee4d2d;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+    .content-body p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 12px;
+    }
+    .content-body ul {
+      padding-left: 18px;
+      margin-bottom: 15px;
+    }
+    .content-body li {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 6px;
+    }
+    .content-body strong {
+      color: #222;
+    }
+
+    /* Reviews */
+    .review-summary {
+      background: #fffbf8;
+      border: 1px solid #fbd9c8;
+      padding: 15px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .rating-score {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ee4d2d;
+    }
+    .stars {
+      color: #ffce3d;
+      font-size: 14px;
+    }
+    .review-item {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .review-user {
+      font-size: 13px;
+      font-weight: 700;
+      color: #333;
+    }
+    .review-meta {
+      font-size: 11px;
+      color: #888;
+      margin: 3px 0;
+    }
+    .review-comment {
+      font-size: 13px;
+      line-height: 1.4;
+      color: #444;
+      margin-top: 4px;
+    }
+
+    /* Fixed CTA Footer */
+    .cta-bar {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 600px;
+      background: #fff;
+      padding: 10px 15px;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      z-index: 999;
+    }
+    .btn-buy {
+      background: #ee4d2d;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 4px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 5px rgba(238, 77, 45, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Banner chính -->
+    <div class="banner">
+      <img src="https://content.pancake.vn/web-media-264/s50x50/fwebp/8f/3e/6a/34/f90576408d1aa0cf77192b120b00892a43d43622edaf79e55704c46f-w:875-h:875-l:56294-t:image/jpeg.jpg" alt="Kem chống nắng d'Alba">
+    </div>
+
+    <!-- Thông tin sản phẩm -->
+    <div class="product-info">
+      <h1 class="product-title">Kem chống nắng d'Alba White Truffle Waterfull Tone-Up SPF 50+</h1>
+      
+      <div class="price-box">
+        <span class="current-price">174.000đ</span>
+        <span class="old-price">580.000đ</span>
+        <span class="discount-badge">-70%</span>
+      </div>
+
+      <div class="sales-count">Đã bán 10k+</div>
+
+      <!-- Thanh Stock / Sắp cháy hàng -->
+      <div class="stock-box">
+        <div class="stock-text">🔥 Sắp cháy hàng! Chỉ còn vài sản phẩm cuối cùng</div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill"></div>
+        </div>
+        <div class="stock-subtext">
+          <span>Đã bán: <strong>86%</strong></span>
+          <span>Nhanh tay kẻo lỡ!</span>
+        </div>
+      </div>
+
+      <!-- Chính sách bán hàng -->
+      <div class="policies">
+        <div class="policy-item">
+          <span class="policy-icon">🚀</span>
+          <div>
+            <div class="policy-text-main">Giao Siêu Tốc</div>
+            <div class="policy-text-sub">Nhận hàng 3-5 ngày</div>
+          </div>
+        </div>
+        <div class="policy-item">
+          <span class="policy-icon">📦</span>
+          <div>
+            <div class="policy-text-main">Được Kiểm Hàng</div>
+            <div class="policy-text-sub">Đúng mẫu thanh toán</div>
+          </div>
+        </div>
+        <div class="policy-item">
+          <span class="policy-icon">💵</span>
+          <div>
+            <div class="policy-text-main">Thanh Toán COD</div>
+            <div class="policy-text-sub">An toàn, tiện lợi</div>
+          </div>
+        </div>
+        <div class="policy-item">
+          <span class="policy-icon">✨</span>
+          <div>
+            <div class="policy-text-main">Hạn Dùng</div>
+            <div class="policy-text-sub">Hạn sử dụng còn xa</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mô tả chi tiết -->
+    <div class="section-detail">
+      <h2 class="section-title">Mô Tả Sản Phẩm</h2>
+      <div class="content-body">
+        <p><strong>Kem Chống Nắng Nâng Tông d'Alba Waterfull Tone-Up Sun Cream SPF50+ PA++++ 50ml</strong> giúp bảo vệ da hằng ngày trước tia UV và nắng gắt, đồng thời nâng tông nhẹ cho làn da trông sáng mịn và tươi tắn hơn ngay khi thoa. Nếu bạn cần một kem chống nắng không bết dính, mỏng nhẹ và có thể dùng đi học, đi làm hay trước lớp makeup – đây là lựa chọn cực kỳ phù hợp.</p>
+
+        <p>Sản phẩm mang lại lớp finish tự nhiên, giúp da trông đều màu và rạng rỡ hơn mà không cần trang điểm cầu kỳ.</p>
+
+        <ul>
+          <li><strong>Nâng tông nhẹ, tự nhiên:</strong> Giúp da trông sáng và rạng rỡ hơn ngay khi dùng, không trắng bệch.</li>
+          <li><strong>Mỏng nhẹ, không bết dính:</strong> Thấm nhanh, cho cảm giác nhẹ mặt, dễ chịu khi dùng hằng ngày.</li>
+          <li><strong>Bảo vệ da dưới nắng gắt:</strong> SPF50+ PA++++ giúp hỗ trợ giảm tác động từ tia UV.</li>
+          <li><strong>Finish tự nhiên, không vệt trắng:</strong> Da trông mịn màng và đều màu hơn sau khi thoa.</li>
+          <li><strong>Phù hợp trước makeup:</strong> Dùng như kem lót, giúp lớp nền tiệp da và mịn hơn.</li>
+          <li><strong>Giữ ẩm nhẹ nhàng:</strong> Giúp da mềm mịn, không khô căng trong suốt ngày dài.</li>
+        </ul>
+
+        <p><strong>ƯU ĐIỂM SỬ DỤNG:</strong></p>
+        <ul>
+          <li><strong>Phù hợp khi:</strong> Đi làm, đi học, sử dụng mỗi ngày.</li>
+          <li><strong>Phù hợp khi:</strong> Cần lớp nền nhẹ, tự nhiên trước makeup.</li>
+          <li><strong>Phù hợp khi:</strong> Muốn da trông tươi tắn mà không cần trang điểm nhiều.</li>
+        </ul>
+
+        <p><strong>THÀNH PHẦN NỔI BẬT:</strong></p>
+        <ul>
+          <li><strong>Chiết xuất gạo:</strong> Giúp da trông sáng và mềm mịn hơn.</li>
+          <li><strong>Niacinamide:</strong> Hỗ trợ cải thiện đều màu da.</li>
+          <li><strong>Panthenol (Vitamin B5):</strong> Giúp làm dịu và duy trì độ ẩm cho da.</li>
+        </ul>
+
+        <p><strong>PHÙ HỢP VỚI:</strong></p>
+        <ul>
+          <li>Da xỉn màu, cần nâng tông nhẹ.</li>
+          <li>Da dầu hoặc da hỗn hợp không thích bết dính.</li>
+          <li>Người cần kem chống nắng dùng hàng ngày.</li>
+          <li>Da nhạy cảm cần sản phẩm nhẹ dịu, dễ dùng.</li>
+        </ul>
+
+        <p><strong>CÁCH SỬ DỤNG:</strong></p>
+        <ul>
+          <li>Thoa ở bước cuối cùng trong chu trình chăm sóc da buổi sáng.</li>
+          <li>Dùng trước khi trang điểm để tạo lớp nền tự nhiên.</li>
+          <li>Thoa lại sau mỗi 2–3 giờ khi hoạt động ngoài trời.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Đánh giá khách hàng -->
+    <div class="section-detail">
+      <h2 class="section-title">Đánh Giá Sản Phẩm</h2>
+      
+      <div class="review-summary">
+        <div class="rating-score">4.9 <span style="font-size: 14px; color: #666;">trên 5</span></div>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="review-list">
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">h*****3</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-28 14:30</div>
+            <div class="review-comment">Sản phẩm dùng cực kỳ thích nhé mọi người, nâng tone nhẹ nhàng tự nhiên, không bị bết dính. Da nhạy cảm như mình dùng rất hợp!</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">nguyen_thu_ha</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-27 09:15</div>
+            <div class="review-comment">Mùi thơm dịu nhẹ, dạng serum thẩm thấu cực nhanh vào da. Giao hàng nhanh, đóng gói cẩn thận có bọc chống sốc.</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">tran_linh_98</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-25 18:20</div>
+            <div class="review-comment">Đã mua lần thứ 2 ở shop rồi. D'Alba dùng thì không có điểm gì chê, da căng bóng kiểu Hàn Quốc rất đẹp.</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">phuong_anh_hn</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-24 11:45</div>
+            <div class="review-comment">Chất kem mướt, tán cực dễ. Da mình da dầu mụn dùng thấy rất lành tính, không bị lên mụn ẩn.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nút mua hàng cố định ở chân trang -->
+  <div class="cta-bar">
+    <a href="https://sale.dalbaskincare.co/thanh-toan" class="btn-buy">MUA NGAY</a>
+  </div>
+
+</body>
+</html>
