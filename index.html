@@ -15,9 +15,9 @@
       font-family: 'Roboto', sans-serif;
     }
     body {
-      background-color: #f5f5f5;
+      background-color: #f4f4f4;
       color: #333;
-      padding-bottom: 70px;
+      padding-bottom: 75px;
     }
     .container {
       max-width: 600px;
@@ -32,10 +32,10 @@
       display: block;
     }
     .product-info {
-      padding: 15px;
+      padding: 16px;
     }
     .product-title {
-      font-size: 18px;
+      font-size: 19px;
       font-weight: 700;
       line-height: 1.4;
       margin-bottom: 12px;
@@ -48,7 +48,7 @@
       margin-bottom: 10px;
     }
     .current-price {
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 700;
       color: #ee4d2d;
     }
@@ -71,19 +71,19 @@
       margin-bottom: 15px;
     }
     
-    /* Progress Bar */
+    /* Progress Bar Urgency */
     .stock-box {
       background: #fff5f5;
       border: 1px solid #ffe1e1;
       border-radius: 8px;
-      padding: 10px 12px;
-      margin-bottom: 15px;
+      padding: 12px;
+      margin-bottom: 18px;
     }
     .stock-text {
       font-size: 13px;
       color: #ee4d2d;
       margin-bottom: 6px;
-      font-weight: 500;
+      font-weight: 700;
     }
     .progress-bar-bg {
       background: #ffd0d0;
@@ -104,27 +104,27 @@
       color: #666;
     }
 
-    /* Policy Grid */
+    /* Policies */
     .policies {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap: 12px;
       background: #fafafa;
       padding: 12px;
       border-radius: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     .policy-item {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
     .policy-icon {
-      font-size: 16px;
+      font-size: 18px;
     }
     .policy-text-main {
-      font-size: 12px;
-      font-weight: bold;
+      font-size: 13px;
+      font-weight: 700;
       color: #333;
     }
     .policy-text-sub {
@@ -132,17 +132,17 @@
       color: #777;
     }
 
-    /* Section Details */
+    /* Section Body */
     .section-detail {
-      border-top: 8px solid #f5f5f5;
-      padding: 15px;
+      border-top: 8px solid #f4f4f4;
+      padding: 18px 16px;
     }
     .section-title {
-      font-size: 16px;
+      font-size: 17px;
       font-weight: 700;
       text-transform: uppercase;
-      margin-bottom: 12px;
-      color: #333;
+      margin-bottom: 14px;
+      color: #222;
       border-bottom: 2px solid #ee4d2d;
       display: inline-block;
       padding-bottom: 4px;
@@ -150,12 +150,12 @@
     .content-body p {
       font-size: 14px;
       line-height: 1.6;
-      color: #444;
+      color: #333;
       margin-bottom: 12px;
     }
     .content-body ul {
-      padding-left: 18px;
-      margin-bottom: 15px;
+      padding-left: 20px;
+      margin-bottom: 16px;
     }
     .content-body li {
       font-size: 14px;
@@ -163,25 +163,30 @@
       color: #444;
       margin-bottom: 6px;
     }
-    .content-body strong {
-      color: #222;
+    .sub-heading {
+      font-weight: 700;
+      font-size: 15px;
+      color: #111;
+      margin: 18px 0 10px 0;
+      text-transform: uppercase;
     }
 
     /* Reviews */
     .review-summary {
       background: #fffbf8;
       border: 1px solid #fbd9c8;
-      padding: 15px;
+      padding: 16px;
       border-radius: 8px;
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 16px;
       margin-bottom: 20px;
     }
     .rating-score {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       color: #ee4d2d;
+      line-height: 1;
     }
     .stars {
       color: #ffce3d;
@@ -190,12 +195,12 @@
     .review-item {
       display: flex;
       gap: 12px;
-      padding: 12px 0;
+      padding: 14px 0;
       border-bottom: 1px solid #eee;
     }
     .avatar {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
       object-fit: cover;
     }
@@ -207,13 +212,41 @@
     .review-meta {
       font-size: 11px;
       color: #888;
-      margin: 3px 0;
+      margin: 3px 0 6px 0;
     }
     .review-comment {
       font-size: 13px;
-      line-height: 1.4;
+      line-height: 1.5;
       color: #444;
-      margin-top: 4px;
+    }
+
+    /* Social Proof Toast Popup */
+    .toast-notification {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-radius: 30px;
+      padding: 6px 16px 6px 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 1000;
+      animation: fadeInOut 4s forwards;
+    }
+    .toast-icon {
+      font-size: 18px;
+    }
+    .toast-text {
+      font-size: 12px;
+      color: #333;
+    }
+    .toast-text span {
+      font-size: 10px;
+      color: #888;
+      display: block;
     }
 
     /* Fixed CTA Footer */
@@ -226,7 +259,7 @@
       max-width: 600px;
       background: #fff;
       padding: 10px 15px;
-      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
       display: flex;
       justify-content: center;
       z-index: 999;
@@ -242,11 +275,20 @@
       text-decoration: none;
       border-radius: 4px;
       text-transform: uppercase;
-      box-shadow: 0 2px 5px rgba(238, 77, 45, 0.4);
+      box-shadow: 0 2px 6px rgba(238, 77, 45, 0.4);
     }
   </style>
 </head>
 <body>
+
+  <!-- Popup thông báo đơn hàng nhảy ngẫu nhiên giống Webcake -->
+  <div class="toast-notification" id="toast">
+    <div class="toast-icon">🛒</div>
+    <div class="toast-text">
+      <strong>Nguyễn Thu Hà</strong> vừa đặt mua sản phẩm thành công
+      <span>Vừa xong</span>
+    </div>
+  </div>
 
   <div class="container">
     <!-- Banner chính -->
@@ -266,7 +308,7 @@
 
       <div class="sales-count">Đã bán 10k+</div>
 
-      <!-- Thanh Stock / Sắp cháy hàng -->
+      <!-- Thanh Stock khẩn cấp -->
       <div class="stock-box">
         <div class="stock-text">🔥 Sắp cháy hàng! Chỉ còn vài sản phẩm cuối cùng</div>
         <div class="progress-bar-bg">
@@ -311,7 +353,7 @@
       </div>
     </div>
 
-    <!-- Mô tả chi tiết -->
+    <!-- Mô tả chi tiết toàn bộ nội dung -->
     <div class="section-detail">
       <h2 class="section-title">Mô Tả Sản Phẩm</h2>
       <div class="content-body">
@@ -328,21 +370,21 @@
           <li><strong>Giữ ẩm nhẹ nhàng:</strong> Giúp da mềm mịn, không khô căng trong suốt ngày dài.</li>
         </ul>
 
-        <p><strong>ƯU ĐIỂM SỬ DỤNG:</strong></p>
+        <div class="sub-heading">ƯU ĐIỂM SỬ DỤNG</div>
         <ul>
-          <li><strong>Phù hợp khi:</strong> Đi làm, đi học, sử dụng mỗi ngày.</li>
-          <li><strong>Phù hợp khi:</strong> Cần lớp nền nhẹ, tự nhiên trước makeup.</li>
-          <li><strong>Phù hợp khi:</strong> Muốn da trông tươi tắn mà không cần trang điểm nhiều.</li>
+          <li><strong>Phù hợp khi:</strong> đi làm, đi học, sử dụng mỗi ngày.</li>
+          <li><strong>Phù hợp khi:</strong> cần lớp nền nhẹ, tự nhiên trước makeup.</li>
+          <li><strong>Phù hợp khi:</strong> muốn da trông tươi tắn mà không cần trang điểm nhiều.</li>
         </ul>
 
-        <p><strong>THÀNH PHẦN NỔI BẬT:</strong></p>
+        <div class="sub-heading">THÀNH PHẦN NỔI BẬT</div>
         <ul>
           <li><strong>Chiết xuất gạo:</strong> Giúp da trông sáng và mềm mịn hơn.</li>
           <li><strong>Niacinamide:</strong> Hỗ trợ cải thiện đều màu da.</li>
           <li><strong>Panthenol (Vitamin B5):</strong> Giúp làm dịu và duy trì độ ẩm cho da.</li>
         </ul>
 
-        <p><strong>PHÙ HỢP VỚI:</strong></p>
+        <div class="sub-heading">PHÙ HỢP VỚI</div>
         <ul>
           <li>Da xỉn màu, cần nâng tông nhẹ.</li>
           <li>Da dầu hoặc da hỗn hợp không thích bết dính.</li>
@@ -350,7 +392,7 @@
           <li>Da nhạy cảm cần sản phẩm nhẹ dịu, dễ dùng.</li>
         </ul>
 
-        <p><strong>CÁCH SỬ DỤNG:</strong></p>
+        <div class="sub-heading">CÁCH SỬ DỤNG</div>
         <ul>
           <li>Thoa ở bước cuối cùng trong chu trình chăm sóc da buổi sáng.</li>
           <li>Dùng trước khi trang điểm để tạo lớp nền tự nhiên.</li>
@@ -359,12 +401,12 @@
       </div>
     </div>
 
-    <!-- Đánh giá khách hàng -->
+    <!-- Đánh giá khách hàng đầy đủ từ web cũ -->
     <div class="section-detail">
       <h2 class="section-title">Đánh Giá Sản Phẩm</h2>
       
       <div class="review-summary">
-        <div class="rating-score">4.9 <span style="font-size: 14px; color: #666;">trên 5</span></div>
+        <div class="rating-score">4.9 <span style="font-size: 13px; color: #666; font-weight: 400;">trên 5</span></div>
         <div class="stars">★★★★★</div>
       </div>
 
@@ -408,11 +450,131 @@
             <div class="review-comment">Chất kem mướt, tán cực dễ. Da mình da dầu mụn dùng thấy rất lành tính, không bị lên mụn ẩn.</div>
           </div>
         </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">le_thi_mai</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-22 15:10</div>
+            <div class="review-comment">Hàng chuẩn chính hãng, check mã vạch thoải mái. Dùng làm lớp lót trang điểm thì quá đỉnh luôn.</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">hoang_nam_it</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-20 08:50</div>
+            <div class="review-comment">Mua tặng vợ, vợ khen nức nở bảo kem chống nắng d'Alba này đỉnh chóp, không cay mắt, thấm nhanh.</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">vu_dinh_chung</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-18 13:05</div>
+            <div class="review-comment">Giao hàng cực nhanh, đặt hôm trước hôm sau nhận được luôn. Kem chống nắng dùng mát da.</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">bui_thi_hoa</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-16 19:40</div>
+            <div class="review-comment">Đóng gói kỹ, sản phẩm nguyên seal. Mùi hương sang trọng kiểu mỹ phẩm cao cấp Hàn Quốc.</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">quynh_chi_99</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-15 10:25</div>
+            <div class="review-comment">Da khô dùng em này là chân ái nhé, ẩm mịn cả ngày mà không bị đổ dầu vùng chữ T.</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">do_minh_trang</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-12 16:50</div>
+            <div class="review-comment">Sản phẩm chất lượng vượt trội so với giá tiền. Shop phục vụ rất chu đáo, tặng kèm quà xinh xắn.</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">k*****a</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-10 12:11</div>
+            <div class="review-comment">Chất kem mỏng nhẹ như nước, đánh lên da căng bóng tức thì. Rất ưng ý!</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">trinh_thanh_huyen</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-09 17:42</div>
+            <div class="review-comment">Kem chống nắng dAlba dùng mượt lắm luôn, không lộ vân kem chút nào.</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">minh_quan_sg</div>
+            <div class="stars">★★★★☆</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-08 08:30</div>
+            <div class="review-comment">Giao hàng hơi lâu xíu do bên vận chuyển nhưng sản phẩm dAlba thì quá tuyệt vời!</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">yen_nhu_2k</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-07 20:15</div>
+            <div class="review-comment">Kem chống nắng xịn nhất từng xài, dịu nhẹ và thấm cực nhanh.</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">pham_ngoc_lan</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-06 14:02</div>
+            <div class="review-comment">Đã check hidden tag chuẩn auth. Shop bán hàng tâm huyết lắm.</div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img class="avatar" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=faces" alt="Avatar">
+          <div>
+            <div class="review-user">d*****o</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-meta">Phân loại hàng: 50ml, Cấp ẩm | 2026-10-05 11:22</div>
+            <div class="review-comment">Mua lại lần 3, kem dùng mướt mịn không bị vón cục.</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Nút mua hàng cố định ở chân trang -->
+  <!-- Nút mua hàng cố định -->
   <div class="cta-bar">
     <a href="https://sale.dalbaskincare.co/thanh-toan" class="btn-buy">MUA NGAY</a>
   </div>
